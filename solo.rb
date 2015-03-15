@@ -1,4 +1,4 @@
-environment "production"
+#environment "production"
 checksum_path "/var/chef/checksums"
 cookbook_path [
                "/var/chef/cookbooks",
@@ -11,7 +11,6 @@ file_backup_path "/var/chef/backup"
 file_cache_path "/var/chef/cache"
 log_level :info
 log_location STDOUT
-recipe_url "https://github.com/ncerny/cerny_workstation/blob/master/"
 rest_timeout 300
 solo false
 syntax_check_cache_path
