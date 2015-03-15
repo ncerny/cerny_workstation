@@ -9,6 +9,7 @@ environment_path "/var/chef/environments"
 role_path "/var/chef/roles"
 file_backup_path "/var/chef/backup"
 file_cache_path "/var/chef/cache"
+recipe_url 'https://github.com/ncerny/cerny_workstation/releases/download/0.1/cookbooks-1426444829.tar.gz'
 log_level :info
 log_location STDOUT
 rest_timeout 300
