@@ -1,0 +1,19 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-14.04
+    driver:
+      gui: true
+      box: chef/ubuntu-14.04
+      customize:
+        memory: 1024
+suites:
+  - name: default
+    run_list:
+      - recipe[cerny_workstation::default]
+    attributes:
